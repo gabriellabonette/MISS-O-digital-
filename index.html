@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Missão Digital</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div id="inicio" class="tela">
+            <div class="emoji">🚀</div>
+
+            <h1>Missão Digital</h1>
+
+            <p class="subtitulo">
+                O futuro começa com as suas escolhas!
+            </p>
+
+            <p>
+                Responda às perguntas e descubra qual é o seu perfil no mundo da tecnologia.
+            </p>
+
+            <button onclick="iniciar()">Começar missão</button>
+        </div>
+
+        <div id="quiz" class="tela escondido">
+
+            <div class="topo">
+                <span id="numero">Pergunta 1</span>
+                <span id="progresso">1/5</span>
+            </div>
+
+            <h2 id="pergunta"></h2>
+
+            <div id="alternativas"></div>
+
+        </div>
+
+        <div id="resultado" class="tela escondido">
+
+            <div class="emoji">🏆</div>
+
+            <h1>Missão concluída!</h1>
+
+            <p id="mensagem"></p>
+
+            <div class="resultado-box">
+                <h2 id="perfil"></h2>
+                <p id="descricao"></p>
+            </div>
+
+            <button onclick="reiniciar()">Fazer novamente</button>
+
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
